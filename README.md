@@ -12,7 +12,7 @@ __Contexte__ : Développer et mettre en place un modèle permettant de détecter
 ## Instanciation du projet
 
 * Etape 1 : Télécharger le dataset des données sources [ici](http://help.sentiment140.com/for-students)
-* Etape 2 : Lancer le notebook _Transformation-Cleaned.ipynb_ pour effectuer le nettoyage et la transformation des données. Ce script générera un fichier proper_df.csv.
+* Etape 2 : Lancer le notebook _transform.ipynb_ pour effectuer le nettoyage et la transformation des données. Ce script générera un fichier proper_df.csv.
 * Etape 3 a. : Soit vous décidez d'entraîner le modèle, auquel cas, lancer le fichier _main.py_
 * Etape 3 b. : Soit vous décidez de lancer directement le modèle sur les données de test téléchargées précédemment pour voir comment il se comporte face à de nouvelles données. Pour cela, utiliser le fichier _modele.py_
 
