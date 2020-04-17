@@ -81,9 +81,11 @@ Cette couche d'embeddings est connectée à une couche LSTM avec comme sortie un
 Et pour finir une couche Dense de 2 neurones où chaque neurone donne une probabilité sur la classe avec comme fonction d’activation Sigmoid. On a donc en sortie un vecteur à 2 dimensions, 
 un pour chaque classe. On récupère l'index de la colonne avec la fonction Numpy argmax pour connaitre à quel sentiment appartient le texte.
 
-<p align="center">
+<div style="text-align:center">
+    
 ![Test Image 1](model.PNG)
-</p>
+
+</div>
 
 ## Critique du modèle
 
