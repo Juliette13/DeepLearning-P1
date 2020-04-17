@@ -1,9 +1,9 @@
 # Deep Learning - Analyse de sentiments multi-langues
 
 Présentation Equipe : 
-* Florian Calliz, 
+* Florian Caliz, 
 * Aubin Porte, 
-* Paul Loublier et 
+* Paul Loublier, 
 * Juliette Verlaine.
 
 __Contexte__ : Développer et mettre en place un modèle permettant de détecter des sentiments sur du texte, d'abord en anglais et si possible, sur une langue autre.
