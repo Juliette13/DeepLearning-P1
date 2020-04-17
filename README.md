@@ -18,6 +18,9 @@ __Contexte__ : Développer et mettre en place un modèle permettant de détecter
 
 ## Introduction
 
+Ce premier projet de Deep Learning est un projet visant à mettre en place un modèle capable de classifier du texte et de prédire des labels. Sur un jeu de données pré annoté, le modèle doit s'entraîner
+à classifier le texte à savoir s'il est négatif ou positif, et une fois entraîné avec une bonne accuracy, il doit être capable sur du texte brute, sans annotation, de prédire la valeur du label associé. 
+
 ## Transformation des données
 
 ### a. Dataset
