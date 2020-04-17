@@ -75,3 +75,9 @@ def lemmatize_text(text):
 ## Critique du modèle
 
 ## Conclusion
+
+L'analyse de sentiment, lorsqu'elle comporte deux classes, ici negative et positive n'est pas un cas d'usage qui nécessite obligatoirement d'utiliser des modèles de Deep Learning. 
+En effet, l'entraînement est coûteux et les résultats escomptés ne sont pas toujours à la hauteur des attentes. 
+
+Dans le cadre de ce projet, ayant rencontrés quelques problèmes, nous avons pu tester un modèle de Machine Learning : Naive Bayes qui remontait quasiment les mêmes résultats pour un temps d'entraînement bien moins long
+et coûteux en terme de performance machine. Il est donc important de bien comprendre les domaines d'application dans lequel il fait sens d'utiliser du deep learning et dans lequel il fait sens d'utiliser du machine learning. Tout dépend de la nature des données en entrée, et ce n'est pas par ce que c'est du Deep Learning que c'est pour autant magique :) ! 
