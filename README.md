@@ -81,6 +81,8 @@ Cette couche d'embeddings est connectée à une couche LSTM avec comme sortie un
 Et pour finir une couche Dense de 2 neurones où chaque neurone donne une probabilité sur la classe avec comme fonction d’activation Sigmoid. On a donc en sortie un vecteur à 2 dimensions, 
 un pour chaque classe. On récupère l'index de la colonne avec la fonction Numpy argmax pour connaitre à quel sentiment appartient le texte.
 
+![Test Image 1](model.PNG)
+
 ## Critique du modèle
 
 Les résultats sont assez satisfaisants notamment pour une tâche de classification de texte. On note dans la matrice de confusion que les classes sont équilibrés dû à l'homogénéité du 
