@@ -47,8 +47,28 @@ df['text'] = df['text'].str.replace('@\\S+', '', case=False)
 __Etape de visualisation__ : L'étape de visualisation permet de comprendre la répartition des classes, ici positif et négatif (pas de classe neutre) mais aussi l'occurence des mots selon les labels. 
 Les nuages de mots, par labels, permettent de comprendre si des textes annotés comme positifs ont une forte occurence mot positif. Ou si des mots à forte occurence sont présents mais totalement neutre et du coup, sans impact sur l'apprentissage du modèle. 
 
+__Application de fonctions de nettoyages__ : 
 
+```
+def cleanHtml(sentence)
+def cleanPunc(sentence)
+def keepAlpha(sentence)
+```
 
+On nettoie ici toute trace de HTML, tout signe de ponctuation et enfin on applique la mise en minuscule de tous les caractères afin d'applanir le texte. 
+
+__Lemmatization et Tokenization__ :
+
+Le processus de « lemmatisation » consiste à représenter les mots (ou « lemmes » 😉) sous leur forme canonique. Par exemple pour un verbe, ce sera son infinitif. Pour un nom, son masculin singulier. L'idée étant encore une fois de ne conserver que le sens des mots utilisés dans le corpus.
+La tokenisation est l'acte de décomposer une séquence de chaînes en morceaux tels que des mots, des mots-clés, des phrases, des symboles et d'autres éléments appelés jetons. Les jetons peuvent être des mots, des phrases ou même des phrases entières. Dans le processus de tokenisation, certains caractères comme les signes de ponctuation sont supprimés. Les jetons deviennent l'entrée d'un autre processus comme l'analyse et l'exploration de texte.
+
+```
+w_tokenizer = nltk.tokenize.WhitespaceTokenizer()
+lemmatizer = nltk.stem.WordNetLemmatizer()
+def lemmatize_text(text):
+    return [lemmatizer.lemmatize(w) for w in w_tokenizer.tokenize(text)]
+    proper_df['quote_lemmatizer'] = proper_df.quote.apply(lemmatize_text)
+```
 
 ## Modèle
 
